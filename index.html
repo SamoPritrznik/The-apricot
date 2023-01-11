@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The apricot</title>
+
+    <link rel="stylesheet" href="../common/style.css">
+
+    <script type="text/javascript" src="/lib/gl-matrix-min.js"></script>
+    <script type="text/javascript" src="/lib/dat.gui.min.js"></script>
+    <script type="module" src="game/main.js"></script>
+
+    <audio id="myAudio">
+        <source src="common/audio/hojaKrajsa.flac" type="audio/mpeg">
+    </audio>
+
+    <audio id="bing chilling">
+        <source src="common/audio/bingchilling.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="jssound">
+        <source src="common/audio/scare.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="background">
+        <source src="common/audio/background.mp3" type="audio/mpeg">
+    </audio>
+</head>
+<body>
+    <div class="fullscreen no-touch">
+        <canvas></canvas>
+    </div>
+    <div class="fullscreen overlay loader-container">
+        <div class="loader"></div>
+        
+    </div>
+    <img src="common/images/apricot-monster.png" class="jumpscare hidden" id="jumpscare1">
+</body>
+</html>

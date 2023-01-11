@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The apricot collector</title>
+
+    <link rel="stylesheet" href="../common/style.css">
+</head>
+<body>
+    <audio id="myAudio">
+        <source src="common/audio/xue.mp3" type="audio/mpeg">
+    </audio>
+    <style>
+        body {
+          background-image: url('common/images/hello.gif');
+        }
+    </style>
+
+    <script>
+        var audio = document.getElementById("myAudio");
+    
+        function funct() {
+            audio.play();
+            audio.volume = 0.3;
+            window.alert("listen to the dancin music\nwhen you are done click next to start the game :)");
+            audio.pause();
+        }
+    </script>
+
+    <div style="text-align: center; padding-top: 400px;">
+        <h1>The dancing Apricot</h1> <br>
+        <h3> Find and collect all 4 apricots to win. </h3> <br>
+        <a href="index.html"><button id="but" onclick="funct()"> Start dancin' </button></a>
+    </div>
+</body>
+</html>
